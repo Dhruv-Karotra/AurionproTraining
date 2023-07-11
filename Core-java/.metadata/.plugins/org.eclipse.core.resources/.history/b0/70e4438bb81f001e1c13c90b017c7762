@@ -1,0 +1,54 @@
+package com.aurionpro.test;
+
+import com.aurionpro.models.Color;
+import com.aurionpro.models.Rectangle;
+import java.util.Scanner;
+
+public class RectangleTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		Rectangle rt1=new Rectangle();
+		Rectangle rt2=new Rectangle();
+		
+		System.out.print("Enter the height : ");
+		double height=sc.nextDouble();
+		System.out.print("Enter the width : ");
+		double width=sc.nextDouble();
+		System.out.print("Enter the color : ");
+		
+		System.out.print("Enter the height of 2nd : ");
+		double height2=sc.nextDouble();
+		System.out.print("Enter the width of 2nd : ");
+		double width2=sc.nextDouble();
+		System.out.print("Enter the color : ");
+		try {
+			Color color=Color.valueOf(sc.next().toUpperCase());
+			Color color2=Color.valueOf(sc.next().toUpperCase());
+			rt1.setColor(color);
+			rt2.setColor(color2);
+		}
+		catch(IllegalArgumentException e) {
+			rt1.setColor(Color.RED);
+			rt2.setColor(Color.RED);
+		}
+		
+		rt1.setHeight(height);
+		rt1.setWidth(width);
+
+		System.out.println("The height is : "+rt1.getHeight());
+		System.out.println("The width is : "+rt1.getWidth());
+		System.out.println("The area is : "+rt1.calculateArea());
+		System.out.println("The color is : "+rt1.getColor());
+
+		rt2.setHeight(height2);
+		rt2.setWidth(width2);
+
+		System.out.println("The height is : "+rt2.getHeight());
+		System.out.println("The width is : "+rt2.getWidth());
+		System.out.println("The area is : "+rt2.calculateArea());
+		System.out.println("The color is : "+rt2.getColor());
+	}
+
+}

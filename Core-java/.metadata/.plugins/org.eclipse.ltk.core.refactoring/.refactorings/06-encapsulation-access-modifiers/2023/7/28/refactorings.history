@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;RectangleTest.java&apos; to &apos;06-encapsulation-access-modifiers/src/com.aurionpro.models&apos;&#x0D;&#x0A;- Original project: &apos;06-encapsulation-access-modifiers&apos;&#x0D;&#x0A;- Destination element: &apos;06-encapsulation-access-modifiers/src/com.aurionpro.models&apos;&#x0D;&#x0A;- Original element: &apos;com.aurionpro.test.RectangleTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.aurionpro.models" element1="/src&lt;com.aurionpro.test{RectangleTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1688969899305" units="1" version="1.0"/>
+</session>
