@@ -13,7 +13,7 @@ public class RectangleTest {
 			setRectangleValues(rectangle[i]);
 		}
 		for(int i=0;i<rectangle.length;i++) {
-			System.out.println("Values for rectangle "+i+" : ");
+			System.out.println("Values for rectangle at index "+i+" : ");
 			printRectangleDetails(rectangle[i]);
 		}
 	}	
