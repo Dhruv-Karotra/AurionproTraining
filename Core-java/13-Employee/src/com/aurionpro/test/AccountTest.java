@@ -1,5 +1,7 @@
 package com.aurionpro.test;
-
+// instance members belong to object 
+// static members belong to class
+// to declare
 import com.aurionpro.models.Account;
 import com.aurionpro.models.AccountType;
 
@@ -30,6 +32,8 @@ public class AccountTest {
 			new Account(9,"Nikul",8000,AccountType.SAVINGS),
 			new Account(10,"Rajesh",70000,AccountType.CURRENT)
 		};
+		
+		System.out.println("Number of objects : "+Account.getCount());
 		
 		for(Account x:acc) {
 			System.out.println(x);
@@ -108,8 +112,8 @@ public class AccountTest {
 	
 	private static void sortAccountsArrayBySalary(Account[] acc) {
 		Account temp=null;
-		for(int i=0;i<acc.length;i++) {
-			for(int j=0;j<acc.length-1;j++) {
+		for(int i=0;i<acc.length-1;i++) {
+			for(int j=i+1;j<acc.length;j++) {
 				if(acc[i].getBalance()<acc[j].getBalance()) {
 					temp=acc[i];
 					acc[i]=acc[j];

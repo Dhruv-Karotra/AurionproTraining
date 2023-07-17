@@ -5,6 +5,11 @@ public class Account {
 	private String name;
 	private double balance;
 	private AccountType accountType;
+	private static int count;
+	
+	public static int getCount() {
+		return count;
+	}
 	
 	public Account(int id, String name, double balance, AccountType accountType) {
 		super();
@@ -12,6 +17,7 @@ public class Account {
 		this.name=name;
 		this.balance=balance;
 		this.accountType=accountType;
+		count++;
 	}
 	
 	public Account() {
@@ -19,6 +25,7 @@ public class Account {
 		this.name="Dhruv";
 		this.balance=10000.0;
 		this.accountType=AccountType.SAVINGS;
+		count++;
 	}
 	
 	public void setAccountType(AccountType accountType) {

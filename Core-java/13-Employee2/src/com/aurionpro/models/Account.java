@@ -65,10 +65,15 @@ public class Account {
 	}
 	
 	public boolean withdraw(double amount) {
-		if(balance-amount>0) {
+		if(balance-amount>0 && this.accountType.equals(AccountType.SAVINGS)) {
 			this.balance-=amount;
 			return true;
 		}
+		else if(balance-amount>-25000 && this.accountType.equals(AccountType.CURRENT)) {
+			this.balance-=amount;
+			return true;
+		}
+		
 		return false;
 	}
 	
