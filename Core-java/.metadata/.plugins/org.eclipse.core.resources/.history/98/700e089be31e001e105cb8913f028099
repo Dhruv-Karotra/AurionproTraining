@@ -1,9 +1,0 @@
-package com.aurionpro.models;
-
-public class Rectangle {
-	public double height;
-	public double width;
-	public double areaRectangle(double h,double w) {
-		return h*w;
-	}
-}

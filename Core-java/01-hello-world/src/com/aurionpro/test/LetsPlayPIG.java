@@ -19,37 +19,37 @@ public class LetsPlayPIG {
             int turnScore = 0;
             turns++;
             System.out.println("Turn: " + turns);
-            System.out.println("Your current score: " + playerScore);
+            System.out.println("Current score: " + playerScore);
 
             do {
-                System.out.print("Do you want to roll (r) or hold (h)? ");
+                System.out.print("Roll or hold? (r/h) : ");
                 String input = scanner.next();
 
                 if (input.equalsIgnoreCase("r")) {
                     int roll = random.nextInt(6) + 1;
-                    System.out.println("You rolled a " + roll);
+                    System.out.println("Die : " + roll);
 
                     if (roll == 1) {
-                        System.out.println("You rolled a 1. Turn over. You lose all points for this turn!");
+                        System.out.println("Rolled 1, turn over, lost all points in this turn");
                         turnScore = 0;
                         break;
                     } else {
                         turnScore += roll;
                     }
                 } else if (input.equalsIgnoreCase("h")) {
-                    System.out.println("You hold. Your score for this turn: " + turnScore);
+                    System.out.println("Holded.Score this turn: " + turnScore);
                     break;
                 } else {
-                    System.out.println("Invalid input. Please enter 'r' to roll or 'h' to hold.");
+                    System.out.println("Invalid input. Roll or hold? (r/h) : ");
                 }
             } while (true);
 
             playerScore += turnScore;
             totalScore += turnScore;
-            System.out.println("Total score so far: " + totalScore);
-            System.out.println(); // Add a blank line for better readability
+            System.out.println("Total score : " + totalScore);
+            System.out.println();
         }
 
-        System.out.println("Congratulations! You win with a score of " + playerScore + " in " + turns + " turns.");
+        System.out.println("You finished with score of " + playerScore + " in " + turns + " turns.");
     }
 }

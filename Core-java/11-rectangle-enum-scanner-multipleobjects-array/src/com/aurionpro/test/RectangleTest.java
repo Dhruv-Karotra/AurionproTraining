@@ -10,6 +10,7 @@ public class RectangleTest {
 		// TODO Auto-generated method stub
 		Rectangle[] rectangle=new Rectangle[10];
 		for(int i=0;i<rectangle.length;i++) {
+			rectangle[i]=new Rectangle();
 			setRectangleValues(rectangle[i]);
 		}
 		for(int i=0;i<rectangle.length;i++) {
