@@ -3,21 +3,26 @@ package com.aurionpro.models;
 public class InsufficientBalanceException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
-
-	double balance,amount;
-	public InsufficientBalanceException(double balance, double amount) {
-		this.balance=balance;
+	private Account account;
+	private double amount;
+	
+	public InsufficientBalanceException(Account account, double amount) {
+		this.account=account;
 		this.amount=amount;
 	}
 
 	@Override
 	public String getMessage() {
-		return getClass().getSimpleName()+" :\t"+"Balance = "+balance+"\t Withdrawl Amount = "+amount;
+		String message="Transaction fail\n";
+		message+="Withdraw amount = "+amount;
+		message+="\nAvailable balance = "+account.getBalance();
+		return message;
+		//return getClass().getSimpleName()+" :\t"+"Balance = "+balance+"\t Withdrawl Amount = "+amount;
 	}
 
-	@Override
-	public String toString() {
-		return getClass().getSimpleName()+" :\t"+"Balance = "+balance+"\t Withdrawl Amount = "+amount;
-	}
+//	@Override
+//	public String toString() {
+//		return getClass().getSimpleName()+" :\t"+"Balance = "+balance+"\t Withdrawl Amount = "+amount;
+//	}
 	
 }

@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="com.aurionpro.models.Rectangle"/>
 <fullyQualifiedTypeName name="com.aurionpro.test.RectangleTest"/>
 <fullyQualifiedTypeName name="com.aurionpro.models.AccountType"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.aurionpro.models.Man"/>
 <fullyQualifiedTypeName name="com.aurionpro.models.Account"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
@@ -26,4 +25,9 @@
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="com.aurionpro.exception.InvalidAgeException"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
