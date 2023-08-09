@@ -1,7 +1,7 @@
 let board = Array(9);
 let isGameEnds = false;
 let player1Turn = true;
-let storeValue = 'X';
+
 // console.log(board);
 function playerWon(board) {
 
@@ -36,19 +36,21 @@ function play() {
 
     const player2Input = prompt('Enter player2 name');
     // const player2 = parseInt(player2Input);
-
+    let storeValue = 'X';
     while (!isGameEnds) {
         console.log(showBoard(board))
         if (player1Turn) {
             console.log(player1Input, "'s Turn (X):");
-        } else {
-            console.log(player2Input + "'s Turn (O):");
-        }
-        if (player1Turn) {
             storeValue = 'X';
         } else {
+            console.log(player2Input + "'s Turn (O):");
             storeValue = 'O';
         }
+        // if (player1Turn) {
+        //     storeValue = 'X';
+        // } else {
+        //     storeValue = 'O';
+        // }
         let index = 0;
         while (true) {
             const userInput = prompt('Enter cell index (0-8)');
