@@ -3866,3 +3866,14 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.jdt.launching 4 124 2023-08-11 11:41:05.125
 !MESSAGE Launch configuration PigGame references closed project 01-hello-world
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2023-08-11 12:45:45.614
+!MESSAGE Could not auto-share project 31-generics
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project '31-generics'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2023-08-11 12:45:45.614
+!MESSAGE Provided SVN information does not match that on disk for project '31-generics'.
