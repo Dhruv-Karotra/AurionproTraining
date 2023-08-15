@@ -2,5 +2,5 @@ package com.aurionpro.model;
 
 @FunctionalInterface
 public interface IGreetable {
-	public abstract void showGreeting();
+	public abstract void printGreeting();
 }

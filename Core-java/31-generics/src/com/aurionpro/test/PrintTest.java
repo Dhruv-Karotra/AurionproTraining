@@ -1,5 +1,7 @@
 package com.aurionpro.test;
 
+import java.util.function.Consumer;
+
 import com.aurionpro.model.PrintValue;
 import com.aurionpro.model.Rectangle;
 
@@ -31,5 +33,9 @@ public class PrintTest {
 	private static <T1,T2> void printValues(T1 value1,T2 value2) {
 		System.out.println(value1+"\t"+value2);
 	}
+	
+//	private void accept(String name) {
+//		
+//	}
 
 }
