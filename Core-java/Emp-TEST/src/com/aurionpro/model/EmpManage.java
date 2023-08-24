@@ -131,8 +131,7 @@ public class EmpManage {
 			System.out.println(employeeList);
 			System.out.println("Employee deleted :"+employeeToDelete);
 			
-		}
-		
+		}	
 	}
 	
 	public List<Emp> employeesInDepartment(int departmentId) {

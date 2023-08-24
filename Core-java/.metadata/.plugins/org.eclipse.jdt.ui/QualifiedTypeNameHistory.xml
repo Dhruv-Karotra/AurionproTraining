@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.aurionpro.test.RectangleTest"/>
-<fullyQualifiedTypeName name="com.aurionpro.models.AccountType"/>
-<fullyQualifiedTypeName name="com.aurionpro.models.Man"/>
-<fullyQualifiedTypeName name="com.aurionpro.models.Account"/>
-<fullyQualifiedTypeName name="java.io.NotSerializableException"/>
-<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
-<fullyQualifiedTypeName name="com.aurionpro.models.Manager"/>
 <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
 <fullyQualifiedTypeName name="java.time.format.FormatStyle"/>
 <fullyQualifiedTypeName name="com.aurionpro.models.ProductRepository"/>
 <fullyQualifiedTypeName name="com.aurionpro.models.IRepository"/>
 <fullyQualifiedTypeName name="java.lang.invoke.CallSite"/>
-<fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="com.aurionpro.exception.InvalidAgeException"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Movie"/>
@@ -37,14 +28,10 @@
 <fullyQualifiedTypeName name="java.util.function.BiPredicate"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding"/>
-<fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Student"/>
 <fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Employee"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Emp"/>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
@@ -60,4 +47,17 @@
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.PrintNumber"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.PrintCharacter"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Anonymous"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executor"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>
