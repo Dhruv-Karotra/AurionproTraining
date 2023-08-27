@@ -333,7 +333,10 @@ public class EmployeeUtil {
 				break;
 			case 8:
 				System.out.print("Highest paid employee in each department");
-				System.out.println(highestPaidEmployeeInEachDepartment());
+//				System.out.println(highestPaidEmployeeInEachDepartment());
+				highestPaidEmployeeInEachDepartment().forEach((key,value)->{
+					System.out.println(key+" : "+value.get());
+				});
 				break;
 			case 9:
 				System.out.print("Enter a specific role to find highest paid employee : ");

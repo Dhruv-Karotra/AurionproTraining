@@ -38,16 +38,7 @@ public class CartTest {
 
 
         System.out.println(order);
-        System.out.println("Total Order Cost: " + order.calculateOrderPrice());
-		
-		
-		
-		
-		
-		
-				
-		
-
+        System.out.println("Total Order Cost: " + order.calculateOrderPrice());		
 	}
 
 }

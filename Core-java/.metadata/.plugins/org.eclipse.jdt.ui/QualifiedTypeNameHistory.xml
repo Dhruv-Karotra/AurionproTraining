@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
-<fullyQualifiedTypeName name="java.time.format.FormatStyle"/>
-<fullyQualifiedTypeName name="com.aurionpro.models.ProductRepository"/>
-<fullyQualifiedTypeName name="com.aurionpro.models.IRepository"/>
 <fullyQualifiedTypeName name="java.lang.invoke.CallSite"/>
 <fullyQualifiedTypeName name="com.aurionpro.exception.InvalidAgeException"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
@@ -30,8 +26,6 @@
 <fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Student"/>
 <fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
-<fullyQualifiedTypeName name="com.aurionpro.model.Employee"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Emp"/>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
@@ -39,14 +33,11 @@
 <fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.EmpControl"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.PrintNumber"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.PrintCharacter"/>
@@ -58,6 +49,15 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Customer"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.LineItem"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Product"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Order"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Employee"/>
 </qualifiedTypeNameHistroy>
