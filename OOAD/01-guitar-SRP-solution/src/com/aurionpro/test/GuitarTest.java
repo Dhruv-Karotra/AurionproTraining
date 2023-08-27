@@ -1,5 +1,6 @@
 package com.aurionpro.test;
 
+import java.util.Iterator;
 import java.util.List;
 
 import com.aurionpro.model.Builder;
@@ -15,17 +16,17 @@ public class GuitarTest {
 		Guitar likedGuitar= new Guitar("",0,Builder.FENDER,"Stratocastor",Type.ELECTRIC,Wood.ALDER,Wood.ALDER);
 		
 		//Guitar guitar=inv.searchGuitar(likedGuitar);
-		List<Guitar> guitar=inv.searchGuitar(likedGuitar);
+		List matchingGuitars=inv.searchGuitar(likedGuitar);
 		inv.searchGuitar(likedGuitar);
-		if(guitar!=null) {
+		if(!matchingGuitars.isEmpty()) {
 			System.out.println("Guitar found");
 			System.out.println("You might like : ");
-			for(Guitar x : guitar) {
-				System.out.print(x.getBuilder()+" "+x.getModel()+" "+x.getType()+" "
-						+x.getBackWood()+" back and sides "+ x.getTopWood()+" top.");
-				System.out.print(" You can have it for only $ "+x.getPrice()+"\n");
+			for(Iterator i=matchingGuitars.iterator();i.hasNext();) {
+				Guitar guitar=(Guitar) i.next();
+				System.out.print(guitar.getBuilder()+" "+guitar.getModel()+" "+guitar.getType()+" "
+						+guitar.getBackWood()+" back and sides "+ guitar.getTopWood()+" top.");
+				System.out.print(" You can have it for only $ "+guitar.getPrice()+"\n");
 			}
-			
 		}
 		else {
 			System.out.println("Sorry liked guitar not found");

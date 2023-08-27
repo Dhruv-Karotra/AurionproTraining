@@ -1,13 +1,14 @@
 package com.aurionpro.model;
 
-import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Inventory {
-	private List<Guitar> guitars;
+	private List guitars;
 	
 	public Inventory() {
-		this.guitars = new ArrayList<>();
+		guitars = new LinkedList<>();
 	}
 
 	public void addGuitar(String serialNumber, double price, Builder builder, String model, Type type, Wood backWood,
@@ -18,9 +19,9 @@ public class Inventory {
 	}
 	
 	public Guitar getGuitar(String serialNumber) {
-		for(Guitar x : guitars) {
-			if(x.getSerialNumber().equals(serialNumber)) {
-				Guitar guitar=x;
+		for(Iterator i=guitars.iterator();i.hasNext();) {
+			Guitar guitar=(Guitar) i.next();
+			if(guitar.getSerialNumber().equals(serialNumber)) {
 				return guitar;
 			}
 		}
@@ -41,15 +42,16 @@ public class Inventory {
 //	}
 	
 	public List<Guitar> searchGuitar(Guitar searchGuitar) {	
-		List<Guitar> matchingGuitars=new ArrayList<>();
-		for(Guitar x : guitars) {
-			if(searchGuitar.getBuilder()!=x.getBuilder()) {continue;}
+		List<Guitar> matchingGuitars=new LinkedList();
+		for(Iterator i=guitars.iterator();i.hasNext();) {
+			Guitar guitar=(Guitar) i.next();
+			if(searchGuitar.getBuilder()!=guitar.getBuilder()) {continue;}
 			String model=searchGuitar.getModel();
-			if((model!=null) && (model.equals("")) && (!model.equalsIgnoreCase(x.getModel()))) {continue;}
-			if(searchGuitar.getType()!=x.getType()) {continue;}
-			if(searchGuitar.getBackWood()!=x.getBackWood()) {continue;}
-			if(searchGuitar.getTopWood()!=x.getTopWood()) {continue;}
-			matchingGuitars.add(x);
+			if((model!=null) && (model.equals("")) && (!model.equalsIgnoreCase(guitar.getModel()))) {continue;}
+			if(searchGuitar.getType()!=guitar.getType()) {continue;}
+			if(searchGuitar.getBackWood()!=guitar.getBackWood()) {continue;}
+			if(searchGuitar.getTopWood()!=guitar.getTopWood()) {continue;}
+			matchingGuitars.add(guitar);
 		}
 		return matchingGuitars;
 	}
